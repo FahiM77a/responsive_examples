@@ -8,7 +8,7 @@ hr{
 }
 
 .row{
-    height: 400px;
+    /* height: 400px; */
     margin-bottom: 5px;
 }
 
@@ -45,4 +45,21 @@ hr{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 5px;
+}
+
+/* responsive */
+
+@media screen and (max-width:576px){
+    .second-row, .third-row{
+        flex-direction: column;
+    }
+    .third-row-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+@media screen and (min-width:577px) {
+    .row{
+        height: 400px;
+    }
 }
